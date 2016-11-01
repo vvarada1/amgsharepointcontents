@@ -108,7 +108,8 @@
 <p>&nbsp;</p></div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><h1><strong>
 				Latest News</strong><br></h1>
 				
-<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="False" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" EnableOriginalValue="False" ViewContentTypeId="0x" ListUrl="" ListDisplayName="" ListName="{782E8AE8-2A79-4C84-B2EC-5ED2D98EA60B}" ListId="782e8ae8-2a79-4c84-b2ec-5ed2d98ea60b" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Salesforce News!" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Salesforce News" DetailLink="/dev/Lists/Salesforce News" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_5f8c1ddf_62af_4e5b_8263_1f01954f1c8a" __MarkupType="vsattributemarkup" __WebPartId="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="False" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" EnableOriginalValue="False" ViewContentTypeId="0x" ListUrl="" ListDisplayName="" ListName="{782E8AE8-2A79-4C84-B2EC-5ED2D98EA60B}" ListId="782e8ae8-2a79-4c84-b2ec-5ed2d98ea60b" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Salesforce News!" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Salesforce News" DetailLink="/dev/Lists/Salesforce News" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_5f8c1ddf_62af_4e5b_8263_1f01954f1c8a" __MarkupType="vsattributemarkup" __WebPartId="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width="">
+	<ParameterBindings>
 					<ParameterBinding Name="dvt_sortdir" Location="Postback;Connection" />
 					<ParameterBinding Name="dvt_sortfield" Location="Postback;Connection" />
 					<ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue="" />
@@ -117,23 +118,27 @@
 					<ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
 					<ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
 					<ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" />
-					<ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
 					<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
-					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
 				</ParameterBindings>
-<DataFields>
-</DataFields>
+	<JSLink>
+					~site/Apptexfiles/instances/16005872-3A75-49D0-AA1D-02D53C6EAE28.js</JSLink>
+	<DataFields></DataFields>
 <XmlDefinition>
 					<View Name="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" MobileView="TRUE" Type="HTML" Hidden="TRUE" TabularView="FALSE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="0" ContentTypeID="0x" >
 						<Query>
 							<OrderBy>
-								<FieldRef Name="Modified" Ascending="FALSE"/>
+					<FieldRef Name="ID"/>
 							</OrderBy>
 						</Query>
 						<ViewFields>
 							<FieldRef Name="LinkTitleNoMenu"/>
+				<FieldRef Name="epud"/>
 						</ViewFields>
 						<RowLimit Paged="TRUE">30</RowLimit>
+			<Aggregations Value="Off"/>
+			<ViewStyle ID="15"/>
+			<JSLink>clienttemplates.js</JSLink>
 						<XslLink Default="TRUE">main.xsl</XslLink>
 						<Toolbar Type="Standard"/>
 					</View>
