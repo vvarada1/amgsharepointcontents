@@ -150,8 +150,44 @@
 <p>
    <br>&nbsp;<br></p></div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><a href="/Lists/Veras%20Updates/AllItems.aspx"><h1><strong>
 						Weekly&nbsp;Updates</strong><br></h1></a>
-
-
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="True" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{7A0ECC27-6C2B-4DEA-BA13-CA114DCCF43C}" EnableOriginalValue="False" ViewContentTypeId="" ListUrl="" ListDisplayName="" ListName="{A8C868C6-9CB9-4BFC-B740-D846B746481E}" ListId="a8c868c6-9cb9-4bfc-b740-d846b746481e" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Weekly Updates" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" ZoneID="wpz" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Weekly Updates" DetailLink="/dev/Lists/Weekly Updates" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_1274cbc8_953a_4bac_8994_e3906a5a523b" __MarkupType="vsattributemarkup" __WebPartId="{7A0ECC27-6C2B-4DEA-BA13-CA114DCCF43C}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width="">
+	<ParameterBindings>
+		<ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/>
+		<ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/>
+		<ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/>
+		<ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/>
+		<ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
+		<ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
+		<ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
+		<ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" />
+		<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+		<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+	</ParameterBindings>
+	<JSLink>
+	~site/Apptexfiles/instances/7A0ECC27-6C2B-4DEA-BA13-CA114DCCF43C.js</JSLink>
+	<DataFields></DataFields>
+	<XmlDefinition>
+	
+		<View Name="{7A0ECC27-6C2B-4DEA-BA13-CA114DCCF43C}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44" >
+			<Query>
+				<OrderBy>
+					<FieldRef Name="Created"/>
+				</OrderBy>
+			</Query>
+			<ViewFields>
+				<FieldRef Name="LinkTitle"/>
+				<FieldRef Name="u0r5"/>
+				<FieldRef Name="Picture"/>
+				<FieldRef Name="URL_x0020_Link"/>
+			</ViewFields>
+			<RowLimit Paged="TRUE">30</RowLimit>
+			<Aggregations Value="Off"/>
+			<JSLink>clienttemplates.js</JSLink>
+			<XslLink Default="TRUE">main.xsl</XslLink>
+			<Toolbar Type="Standard"/>
+		</View>
+	</XmlDefinition>
+</WebPartPages:XsltListViewWebPart>
 
 
 
