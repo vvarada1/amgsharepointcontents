@@ -84,7 +84,8 @@
 			<FieldRef Name="Description" Explicit="TRUE"/>
 			<FieldRef Name="fRecurrence" Explicit="TRUE"/>
 		</ViewFields>
-		<RowLimit>10</RowLimit>
+		<RowLimit>5</RowLimit>
+		<Aggregations Value="Off"/>
 		<XslLink>main.xsl</XslLink>
 		<Toolbar Type="Standard"/>
 	</View>
