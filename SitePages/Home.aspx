@@ -209,20 +209,42 @@
 			&nbsp;</div></div></div><p>&nbsp;</p><h1>
    <a href="/dev/Lists/Testimonials/AllItems.aspx"> 
       <strong>Testimonials</strong></a></h1><p>&nbsp;</p>
-<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="True" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" EnableOriginalValue="False" ViewContentTypeId="" ListUrl="" ListDisplayName="" ListName="{503D645A-6CA4-4954-B2B7-CED425E4AA00}" ListId="503d645a-6ca4-4954-b2b7-ced425e4aa00" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Testimonials" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" ZoneID="wpz" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Testimonials" DetailLink="/dev/Lists/Testimonials" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_9e6a606e_2e6c_4bef_8905_6692e4a6ef5b" __MarkupType="vsattributemarkup" __WebPartId="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
-  <ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/>
-            <ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/>
-            <ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/>
-            <ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/>
-            <ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
-            <ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
-            <ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
-            <ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" /><ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" /><ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" /></ParameterBindings>
-<DataFields>
-</DataFields>
-<XmlDefinition>
-<View Name="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44" ><Query><OrderBy><FieldRef Name="ID"/></OrderBy></Query><ViewFields><FieldRef Name="LinkTitle"/><FieldRef Name="_x0075_496"/><FieldRef Name="q0ax"/></ViewFields><RowLimit Paged="TRUE">30</RowLimit><JSLink>clienttemplates.js</JSLink><XslLink Default="TRUE">main.xsl</XslLink><Toolbar Type="Standard"/></View></XmlDefinition>
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="True" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" EnableOriginalValue="False" ViewContentTypeId="" ListUrl="" ListDisplayName="" ListName="{503D645A-6CA4-4954-B2B7-CED425E4AA00}" ListId="503d645a-6ca4-4954-b2b7-ced425e4aa00" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Testimonials" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" ZoneID="wpz" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Testimonials" DetailLink="/dev/Lists/Testimonials" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_9e6a606e_2e6c_4bef_8905_6692e4a6ef5b" __MarkupType="vsattributemarkup" __WebPartId="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width="">
+	<ParameterBindings>
+		<ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/>
+		<ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/>
+		<ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/>
+		<ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/>
+		<ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
+		<ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
+		<ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
+		<ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" />
+		<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+		<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+	</ParameterBindings>
+	<JSLink>
+				~site/Apptexfiles/instances/6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD.js</JSLink>
+	<DataFields></DataFields>
+	<XmlDefinition>
+		<View Name="{6B4D9222-B7AC-4FD2-AECF-0A8521DFE4BD}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44" >
+			<Query>
+				<OrderBy>
+					<FieldRef Name="ID"/>
+				</OrderBy>
+			</Query>
+			<ViewFields>
+				<FieldRef Name="LinkTitle"/>
+				<FieldRef Name="_x0075_496"/>
+				<FieldRef Name="q0ax"/>
+			</ViewFields>
+			<RowLimit Paged="TRUE">30</RowLimit>
+			<JSLink>clienttemplates.js</JSLink>
+			<XslLink Default="TRUE">main.xsl</XslLink>
+			<Toolbar Type="Standard"/>
+		</View>
+	</XmlDefinition>
 </WebPartPages:XsltListViewWebPart>
+
 			
 
 
