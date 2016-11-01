@@ -1,4 +1,4 @@
-<%@ Assembly Name="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> <%@ Page Language="C#" Inherits="Microsoft.SharePoint.WebPartPages.WikiEditPage" MasterPageFile="~masterurl/default.master"      MainContentID="PlaceHolderMain" meta:progid="SharePoint.WebPartPage.Document" %>
+<%@ Assembly Name="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> <%@ Page Language="C#" Inherits="Microsoft.SharePoint.WebPartPages.WikiEditPage" MasterPageFile="~masterurl/default.master"      MainContentID="PlaceHolderMain" meta:progid="SharePoint.WebPartPage.Document" meta:webpartpageexpansion="full" %>
 <%@ Import Namespace="Microsoft.SharePoint.WebPartPages" %> <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageTitle" runat="server">
@@ -104,10 +104,40 @@
 
 
 
-</div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><h1><strong>
-						Latest News</strong><br></h1>
+<p>&nbsp;</p></div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><h1><strong>
+				Latest News</strong><br></h1>
 				
-
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="False" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" EnableOriginalValue="False" ViewContentTypeId="0x" ListUrl="" ListDisplayName="" ListName="{782E8AE8-2A79-4C84-B2EC-5ED2D98EA60B}" ListId="782e8ae8-2a79-4c84-b2ec-5ed2d98ea60b" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Salesforce News!" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Salesforce News" DetailLink="/dev/Lists/Salesforce News" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_5f8c1ddf_62af_4e5b_8263_1f01954f1c8a" __MarkupType="vsattributemarkup" __WebPartId="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
+					<ParameterBinding Name="dvt_sortdir" Location="Postback;Connection" />
+					<ParameterBinding Name="dvt_sortfield" Location="Postback;Connection" />
+					<ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue="" />
+					<ParameterBinding Name="dvt_firstrow" Location="Postback;Connection" />
+					<ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
+					<ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
+					<ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
+					<ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" />
+					<ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+					<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+				</ParameterBindings>
+<DataFields>
+</DataFields>
+<XmlDefinition>
+					<View Name="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" MobileView="TRUE" Type="HTML" Hidden="TRUE" TabularView="FALSE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="0" ContentTypeID="0x" >
+						<Query>
+							<OrderBy>
+								<FieldRef Name="Modified" Ascending="FALSE"/>
+							</OrderBy>
+						</Query>
+						<ViewFields>
+							<FieldRef Name="LinkTitleNoMenu"/>
+						</ViewFields>
+						<RowLimit Paged="TRUE">30</RowLimit>
+						<XslLink Default="TRUE">main.xsl</XslLink>
+						<Toolbar Type="Standard"/>
+					</View>
+				</XmlDefinition>
+</WebPartPages:XsltListViewWebPart>
 
 
 
@@ -119,25 +149,41 @@
 
 
 <p>
-   <br>&nbsp;</p><WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="True" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{E78A7A65-6213-49CF-A1DE-32E61403F214}" EnableOriginalValue="False" ViewContentTypeId="" ListUrl="" ListDisplayName="" ListName="{782E8AE8-2A79-4C84-B2EC-5ED2D98EA60B}" ListId="782e8ae8-2a79-4c84-b2ec-5ed2d98ea60b" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Salesforce News!" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" ZoneID="wpz" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Salesforce News" DetailLink="/dev/Lists/Salesforce News" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_27de9ef9_a1ed_4115_9c85_d9e97d8fac19" __MarkupType="vsattributemarkup" __WebPartId="{E78A7A65-6213-49CF-A1DE-32E61403F214}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
-  <ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/>
-            <ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/>
-            <ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/>
-            <ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/>
-            <ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
-            <ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
-            <ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
-            <ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" /><ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" /><ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" /></ParameterBindings>
+   <br>&nbsp;<br></p></div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><a href="/Lists/Veras%20Updates/AllItems.aspx"><h1><strong>
+				Weekly&nbsp;Updates</strong><br></h1></a>
+
+
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="False" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" ViewGuid="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" EnableOriginalValue="False" ViewContentTypeId="0x" ListName="{782E8AE8-2A79-4C84-B2EC-5ED2D98EA60B}" ListId="782e8ae8-2a79-4c84-b2ec-5ed2d98ea60b" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Salesforce News!" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="2" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Salesforce News" DetailLink="/dev/Lists/Salesforce News" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_5f8c1ddf_62af_4e5b_8263_1f01954f1c8a" ExportMode="NonSensitiveData" __MarkupType="vsattributemarkup" __WebPartId="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
+					<ParameterBinding Name="dvt_sortdir" Location="Postback;Connection" />
+					<ParameterBinding Name="dvt_sortfield" Location="Postback;Connection" />
+					<ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue="" />
+					<ParameterBinding Name="dvt_firstrow" Location="Postback;Connection" />
+					<ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
+					<ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
+					<ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
+					<ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" />
+					<ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+					<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+				</ParameterBindings>
 <DataFields>
 </DataFields>
 <XmlDefinition>
-<View Name="{E78A7A65-6213-49CF-A1DE-32E61403F214}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44" ><Query><OrderBy><FieldRef Name="ID"/></OrderBy></Query><ViewFields><FieldRef Name="LinkTitle"/><FieldRef Name="Copy"/><FieldRef Name="epud"/></ViewFields><RowLimit Paged="TRUE">30</RowLimit><JSLink>clienttemplates.js</JSLink><XslLink Default="TRUE">main.xsl</XslLink><Toolbar Type="Standard"/></View></XmlDefinition>
+					<View Name="{16005872-3A75-49D0-AA1D-02D53C6EAE28}" MobileView="TRUE" Type="HTML" Hidden="TRUE" TabularView="FALSE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="0" ContentTypeID="0x" >
+						<Query>
+							<OrderBy>
+								<FieldRef Name="Modified" Ascending="FALSE"/>
+							</OrderBy>
+						</Query>
+						<ViewFields>
+							<FieldRef Name="LinkTitleNoMenu"/>
+						</ViewFields>
+						<RowLimit Paged="TRUE">30</RowLimit>
+						<XslLink Default="TRUE">main.xsl</XslLink>
+						<Toolbar Type="Standard"/>
+					</View>
+				</XmlDefinition>
 </WebPartPages:XsltListViewWebPart>
-
-   <br>&#160;<br></p></div></div></td><td class="ms-wiki-columnSpacing" style="width&#58;33.3%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><a href="/Lists/Veras%20Updates/AllItems.aspx"><h1><strong>
-				Weekly&#160;Updates</strong><br></h1></a>
-
-
 
 
 
@@ -150,45 +196,51 @@
 
 
 </div></div></td></tr><tr style="vertical-align&#58;top;"><td colspan="3"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner"><h1>
-   <strong>Why Salesforce​​​</strong></h1><p style="text-align&#58;center;">&#160;<br></p><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><p>
-				&#160;<img alt="Full Image with bubbles.png" src="/SiteAssets/SitePages/Home/Full%20Image%20with%20bubbles.png" style="margin&#58;5px;width&#58;1528px;height&#58;697px;" /></p></blockquote></blockquote></blockquote>
+   <strong>Why Salesforce​​​</strong></h1><p style="text-align&#58;center;">&nbsp;<br></p><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><blockquote style="margin&#58;0px 0px 0px 40px;padding&#58;0px;border&#58;currentcolor;"><p>
+				&nbsp;<img alt="Full Image with bubbles.png" src="/SiteAssets/SitePages/Home/Full%20Image%20with%20bubbles.png" style="margin&#58;5px;width&#58;1528px;height&#58;697px;" /></p></blockquote></blockquote></blockquote>
 <div><table width="100%" class="ms-rteTable-default" cellspacing="0"><tbody><tr><td class="ms-rteTable-default" style="border&#58;currentcolor;width&#58;25%;">
 	​</td><td class="ms-rteTable-default" style="border&#58;currentcolor;width&#58;25%;">
 	​<br></td><td class="ms-rteTable-default" style="border&#58;currentcolor;width&#58;25%;">
 	​</td><td class="ms-rteTable-default" style="border&#58;currentcolor;width&#58;25%;">
 	​</td></tr></tbody></table> 
    <br> 
-</div><p>&#160;&#160;&#160;&#160;</p><div style="width&#58;100%;"><div style="width&#58;33%;display&#58;inline-block;"> 
+</div><p>&nbsp;&nbsp;&nbsp;&nbsp;</p><div style="width&#58;100%;"><div style="width&#58;33%;display&#58;inline-block;"> 
       <div class="ms-rtestate-read ms-rte-embedcode ms-rtestate-notify ms-rte-embedil s4-wpActive">
          <iframe width="580" height="360" src="https&#58;//www.youtube.com/embed/Z4IOZCQ2L7M" frameborder="0" allowfullscreen=""></iframe>
-			&#160;</div></div><div style="width&#58;33%;display&#58;inline-block;">​ 
+			&nbsp;</div></div><div style="width&#58;33%;display&#58;inline-block;">​ 
       <div class="ms-rtestate-read ms-rte-embedcode ms-rtestate-notify ms-rte-embedil s4-wpActive">
          <iframe width="580" height="360" src="https&#58;//player.vimeo.com/video/153234861" frameborder="0" allowfullscreen=""></iframe> 
-			&#160;</div></div><div style="width&#58;34%;display&#58;inline-block;">​ 
+			&nbsp;</div></div><div style="width&#58;34%;display&#58;inline-block;">​ 
       <div class="ms-rtestate-read ms-rte-embedcode ms-rtestate-notify ms-rte-embedil s4-wpActive">
          <iframe width="600" height="360" src="https&#58;//player.vimeo.com/video/189256572" frameborder="0" allowfullscreen=""></iframe> 
-			&#160;</div></div></div><p>&#160;</p><h1>
+			&nbsp;</div></div></div><p>&nbsp;</p><h1>
    <a href="/Lists/Testimonials/AllItems.aspx"> 
-      <strong>Testimonials</strong></a></h1><p>&#160;</p>
+      <strong>Testimonials</strong></a></h1><p>&nbsp;</p>
 			
+<WebPartPages:XsltListViewWebPart runat="server" ViewFlag="" ViewSelectorFetchAsync="False" InplaceSearchEnabled="False" ServerRender="False" ClientRender="True" InitialAsyncDataFetch="False" WebId="00000000-0000-0000-0000-000000000000" IsClientRender="False" GhostedXslLink="main.xsl" NoDefaultStyle="" ViewGuid="{D9A4FE58-CD66-4EBE-AC8B-EDE9E12F276F}" EnableOriginalValue="False" ViewContentTypeId="" ListUrl="" ListDisplayName="" ListName="{503D645A-6CA4-4954-B2B7-CED425E4AA00}" ListId="503d645a-6ca4-4954-b2b7-ced425e4aa00" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" Title="Testimonials" FrameType="Default" SuppressWebPartChrome="False" Description="" IsIncluded="True" ZoneID="wpz" PartOrder="0" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" CatalogIconImageUrl="/_layouts/15/images/itgen.png?rev=44" TitleUrl="/dev/Lists/Testimonials" DetailLink="/dev/Lists/Testimonials" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="/_layouts/15/images/itgen.png?rev=44" IsIncludedFilter="" ExportControlledProperties="False" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_bc9f9948_df12_43fc_9825_3035982b9acd" __MarkupType="vsattributemarkup" __WebPartId="{D9A4FE58-CD66-4EBE-AC8B-EDE9E12F276F}" __AllowXSLTEditing="true" __designer:CustomXsl="Fldtypes_mswhTitle.xsl;fldtypes_Ratings.xsl" WebPart="true" Height="" Width=""><ParameterBindings>
+  <ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/>
+            <ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/>
+            <ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/>
+            <ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/>
+            <ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" />
+            <ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" />
+            <ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" />
+            <ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" /><ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" /><ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" /></ParameterBindings>
+<DataFields>
+</DataFields>
+<XmlDefinition>
+<View Name="{D9A4FE58-CD66-4EBE-AC8B-EDE9E12F276F}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/dev/SitePages/Home.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44" ><Query><OrderBy><FieldRef Name="ID"/></OrderBy></Query><ViewFields><FieldRef Name="LinkTitle"/><FieldRef Name="_x0075_496"/><FieldRef Name="q0ax"/></ViewFields><RowLimit Paged="TRUE">30</RowLimit><JSLink>clienttemplates.js</JSLink><XslLink Default="TRUE">main.xsl</XslLink><Toolbar Type="Standard"/></View></XmlDefinition>
+</WebPartPages:XsltListViewWebPart>
 
 
 
-
-
-
-
-
-
-
-
-<p>​<br>&#160;</p><WebPartPages:ScriptEditorWebPart runat="server" Content="&lt;style&gt;
+<p>​<br>&nbsp;</p><WebPartPages:ScriptEditorWebPart runat="server" Content="&lt;style&gt;
 .ms-core-navigation { DISPLAY: none }
 #contentBox { margin-left: 20px }
 .nivo-caption{color:#fff !important;}
 .theme-default a.nivo-prevNav{display:none;}
 .theme-default a.nivo-nextNav{display:none;}
-&lt;/style&gt;" Description="Allows authors to insert HTML snippets or scripts." Title="Script Editor" ChromeType="None" ID="g_e59612d2_2e53_44ca_bd94_a6945953a8a3" __MarkupType="vsattributemarkup" __WebPartId="{BD71785A-A6E5-4745-9A2B-45B097F07339}" WebPart="true" __designer:IsClosed="false"></WebPartPages:ScriptEditorWebPart>
+&lt;/style&gt;" Description="Allows authors to insert HTML snippets or scripts." Title="Script Editor" ChromeType="None" ID="g_e59612d2_2e53_44ca_bd94_a6945953a8a3" __MarkupType="vsattributemarkup" __WebPartId="{37646EA7-1296-4052-9C9C-276590A2892B}" WebPart="true" __designer:IsClosed="false"></WebPartPages:ScriptEditorWebPart>
 
 
 
