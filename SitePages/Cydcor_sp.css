@@ -1,0 +1,46 @@
+/* Cydcore css introduce for Phase 2
+Author : Vijaya Varada
+Date : 11/29/2016 */
+.section-headers {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Segoe UI",Tahoma;
+    border-top: 10px solid #00376E !important; 
+    border-bottom: 10px solid #00376E !important; 
+    border-left: 20px solid #00376E !important; 
+}
+.section-headers, .nav-tabs .active a{
+    color: white !important;
+    background-color: #00376E !important; 
+}
+
+.menubar1 {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #00376E;
+	height:auto;
+}
+
+.menubar1 li {
+	float: left;
+}
+
+.menubar1 li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 12px 16px;
+	text-decoration: none;
+}
+
+.menubar1 li a:hover {
+	background-color: transparent;
+}
+
+.menubar2{
+	background:transparent;
+	float:right;
+	margin:-50px 20px;
+}  
