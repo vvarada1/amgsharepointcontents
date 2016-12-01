@@ -36,7 +36,7 @@ Date : 11/29/2016 */
 }
 
 .menubar1 li a:hover {
-	background-color: #4286f4;
+	background-color: transparent;
 }
 
 .menubar2{
@@ -44,33 +44,3 @@ Date : 11/29/2016 */
 	float:right;
 	margin:-50px 20px;
 }  
-
-.buttonsalign1 {
-	text-align: center;
-}
-
-
-.menubarfooter1 {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #00376E;
-	height:auto;
-}
-
-.menubarfooter1 li {
-	float: center;
-}
-
-.menubarfooter1 li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 12px 16px;
-	text-decoration: none;
-}
-
-.menubarfooter1 li a:hover {
-	background-color: #4286f4;
-}
