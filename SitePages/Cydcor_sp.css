@@ -44,3 +44,19 @@ Date : 11/29/2016 */
 	float:right;
 	margin:-50px 20px;
 }  
+/*
+Style 2nd table row cells which is divided in to 
+3 equals widths
+The requirement to change the width % and set margins around
+*/
+table#layoutsTable tr:nth-child(2) td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+table#layoutsTable tr:nth-child(2) td:first-child, table#layoutsTable tr:nth-child(2) td:last-child{
+   width:25%!important;
+}
+table#layoutsTable tr:nth-child(2) td:nth-child(2) {
+   width:50%!important;
+}
