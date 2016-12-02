@@ -14,6 +14,11 @@ Date : 11/29/2016 */
     background-color: #00376E !important; 
 }
 
+.section-headers, .nav-tabs  a{
+	color: white !important;
+    background-color: #0072C6;  
+}
+
 .menubar1 {
 	list-style-type: none;
 	margin: 0;
@@ -50,8 +55,8 @@ Style 2nd table row cells which is divided in to
 The requirement to change the width % and set margins around
 */
 table#layoutsTable>tbody>tr:nth-child(2)>td {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 table#layoutsTable>tbody>tr:nth-child(2)>td:first-child, table#layoutsTable>tbody>tr:nth-child(2)>td:last-child{
@@ -60,3 +65,22 @@ table#layoutsTable>tbody>tr:nth-child(2)>td:first-child, table#layoutsTable>tbod
 table#layoutsTable>tbody>tr:nth-child(2)>td:nth-child(2) {
    width:50%!important;
 }
+/*
+Setting slideshow width to 100%
+*/
+.cbs-Slideshow{
+	width:100%!important;
+}
+/*
+root div
+*/
+#contentRow {
+    padding-top: 10px!important;
+}
+.ms-fullscreenmode #contentBox {
+    margin-left: 10px!important;
+	margin-right: 10px!important;
+}
+/*
+more to add
+*/
