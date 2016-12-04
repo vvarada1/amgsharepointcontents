@@ -82,5 +82,71 @@ root div
 	margin-right: 10px!important;
 }
 /*
-more to add
+Apptext scroll component has text with background blue and color black
 */
+.caption-description{
+	color: white;
+}
+/*
+Hide side navigation begins
+*/
+#sideNavBox {
+	display:none;	
+}
+#contentBox{
+	margin-left: 20px!important;
+}
+/*
+Hide side navigation ends
+*/
+
+/*
+Hide header begins
+*/
+#s4-titlerow{
+	display:none!important	
+}
+/*
+Hide header ends
+*/
+
+/* Foorter begins */
+.footerbutton{
+    background-color:#00A0E0;
+    border-color:#00A0E0;
+    padding:10px;
+    color:#fff;
+    font-weight:bold;
+    height:50px;
+    width:200px;
+}
+.footerbutton a{
+    text-decoration:none;
+    color:#fff;
+    height: 50px;
+    width: 200px;
+}
+.footerdiv {
+	padding-top: 20px;	
+	padding-bottom: 20px;
+	background-color: #00376E;
+	height:auto;
+	width:100%;
+}
+.footerlinks a {
+    color:#fff;
+}
+.copyright {   
+	color:#b4b6ba;
+}
+/* Footer Ends */
+
+/* Image border color begins*/
+.tab-content {
+    border-style: solid;
+    border-color: #00376E;
+}
+/* Image border color ends*/
+
+
+
