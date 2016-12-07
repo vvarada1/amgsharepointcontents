@@ -1,4 +1,4 @@
-﻿/* Cydcore css introduce for Phase 2
+/* Cydcore css introduce for Phase 2
 Author : Vijaya Varada
 Date : 11/29/2016 */
 .section-headers {
@@ -148,5 +148,14 @@ Hide header ends
 }
 /* Image border color ends*/
 
+/* Popular Resources begins*/
+#div-popular-resources {
+	background-color: #D4EBF5;
+}
+#div-popular-resources .cbs-Item{
+	padding-bottom: 5px!important;
+    padding-left: 30px;
+}
+/* Popular Resources ends*/
 
 
