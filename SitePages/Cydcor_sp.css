@@ -158,4 +158,8 @@ Hide header ends
 }
 /* Popular Resources ends*/
 
-
+/* Horizontal Tiles begins */
+.cbs-pictureOnTopImg_horzontaltiles {
+    max-height: 100%!important;
+}
+/* Horizontal Tiles ends */
